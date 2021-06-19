@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background-color: #212529;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+section{
+    padding: 5px;
+}
+
+.nav{
+    height: 10vh;
+    
+
+}
+.nav-wrapper div{
+    width: 50%;
+    
+}
+.nav-wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.links ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.links ul > li{
+    text-decoration: none;
+    margin-right: 65px;
+    font-size: 1.2rem;
+    font-weight: 550;
+
+}
+.links ul > li > a{
+    transition: border ease-in;
+}
+
+.links ul > li > a:hover{
+    border-bottom: 3px solid white;
+}
+
+/* MAIN */
+
+.main{
+
+    height: 70vh;
+}
+.main-wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.main-wrapper div{
+    width: 50%;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.desc h2{
+    letter-spacing: 1.5px;
+    font-size: 1.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 12ch;
+    animation: typing 1.4s steps(12);
+}
+
+
+
+
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+
+    100%{
+        width: 12ch;
+        border-right: 0px;
+    }
+}
+
+.desc span{
+    font-weight: 400;
+}
+
+.para{
+    width: 70%;
+}
+.desc p{
+    font-size: 1rem;
+}
+
+
+/* SOCIAL */
+
+.social{
+    height: 12vh;
+
+
+}
+
+.social-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links{
+
+    width: 30%;
+}
+
+.social-links ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul > li{
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 550;
+
+}
+
+
+/* ABOUT */
+
+.about{
+    margin-top: 8vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+
+}
+
+
+.heading{
+    width: 40%;
+    margin-top: -5%;
+}
+
+.paragraph{
+
+    width: 50%;
+    margin-top: 3%;
+    
+}
+
+
+/* SKILLS */
+
+/* .skills > img{
+    width: 150px;
+    height: 150px;
+} */
+
+
+.skills{
+    margin-top: 8vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+
+}
+
+
+.skills-heading{
+    width: 40%;
+    margin-top: -5%;
+}
+
+.images{
+    width: 70%;
+}
+
+.images > img{
+    margin-right: 2rem;
+}
