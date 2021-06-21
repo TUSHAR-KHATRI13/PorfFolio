@@ -5,10 +5,12 @@
 }
 
 body{
+    margin-top: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
     background-color: #212529;
     color: white;
+    position: relative;
 }
 a{
     text-decoration: none;
@@ -18,23 +20,30 @@ section{
     padding: 5px;
 }
 
-.nav{
-    height: 10vh;
-    
 
-}
-.nav-wrapper div{
-    width: 50%;
-    
-}
+
 .nav-wrapper{
-    height: 100%;
-    display: flex;
-    align-items: center;
 
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0;
+    position: fixed;
+    top: 0;
+    background: rgba( 255, 255, 255, 0.10 );
+
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+/* border-radius: 10px; */
+border: 0px solid rgba( 255, 255, 255, 0.18 );
+    
 
 }
 
+.links{
+    align-self: center;
+}
 .links ul{
     display: flex;
     align-items: center;
