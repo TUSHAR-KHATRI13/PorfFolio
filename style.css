@@ -17,10 +17,10 @@ a {
   color: white;
 }
 
-.portfolio {
+/* .portfolio {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-}
+} */
 
 /* .portfolio section {
   scroll-snap-align: start;
@@ -193,20 +193,34 @@ ul > li {
   gap: 25px;
 }
 .card {
-  height: 80px;
+  height: 70px;
 }
 .card-content {
   width: 65%;
   height: 100%;
   margin: 0 auto;
+  padding: 10px 5px;
   background: rgba(255, 255, 255, 0.1);
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 5px;
   border: 0px solid rgba(255, 255, 255, 0.18);
 
   z-index: 1000;
+}
+
+.card-content p:nth-child(2) {
+  cursor: pointer;
+  align-self: flex-end;
+  border-bottom: 1px solid;
+}
+
+.card-content i {
+  font-size: 0.8rem;
+  margin-right: 8px;
 }
 /* .skills {
   margin-top: 8vh;
