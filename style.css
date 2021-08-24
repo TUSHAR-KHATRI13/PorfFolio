@@ -17,6 +17,15 @@ a {
   color: white;
 }
 
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll {
+  scroll-snap-align: center;
+}
 /* .portfolio {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -45,6 +54,12 @@ section {
   -webkit-backdrop-filter: blur(4px);
 
   border: 0px solid rgba(255, 255, 255, 0.18);
+}
+
+.logo {
+  margin-left: 30px;
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 2rem;
 }
 
 .nav-wrapper ul {
@@ -88,6 +103,13 @@ section {
   width: 50%;
 }
 
+.photo {
+  display: flex;
+  justify-content: center;
+}
+.photo img {
+  border-radius: 50%;
+}
 .desc {
   display: flex;
   flex-direction: column;
@@ -95,8 +117,9 @@ section {
 }
 
 .desc h2 {
+  font-family: "Cedarville Cursive", cursive;
   letter-spacing: 1.5px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   overflow: hidden;
   white-space: nowrap;
   width: 12ch;
@@ -168,6 +191,11 @@ ul > li {
   margin-top: -5%;
 }
 
+.heading h1 {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 2rem;
+}
+
 .paragraph {
   width: 50%;
   margin-top: 3%;
@@ -187,6 +215,14 @@ ul > li {
   justify-content: center;
   scroll-snap-align: start;
 }
+
+#projects h1 {
+  margin-bottom: 40px;
+  margin-left: 131px;
+  font-family: "Cedarville Cursive", cursive;
+  color: black;
+  font-size: 2rem;
+}
 .projects-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -199,8 +235,8 @@ ul > li {
   width: 65%;
   height: 100%;
   margin: 0 auto;
-  padding: 10px 5px;
-  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -208,7 +244,7 @@ ul > li {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 5px;
   border: 0px solid rgba(255, 255, 255, 0.18);
-
+  color: black;
   z-index: 1000;
 }
 
@@ -217,30 +253,100 @@ ul > li {
   align-self: flex-end;
   border-bottom: 1px solid;
 }
-
+.card-content a {
+  color: black;
+}
 .card-content i {
   font-size: 0.8rem;
   margin-right: 8px;
 }
-/* .skills {
-  margin-top: 8vh;
+
+.nav-bg {
+  background-color: #242526;
+}
+
+#about {
+  background-color: #3a3b3c;
+}
+
+#projects {
+  background-color: #bfbfbf;
+}
+
+.nav-bg,
+#about,
+#projects {
+  background-attachment: fixed;
+}
+
+#contact {
   min-height: 100vh;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10%;
-  scroll-snap-align: start;
+  /* align-items: center; */
 }
 
-.skills-heading {
-  width: 40%;
-  margin-top: -5%;
+#contact-row1 h1 {
+  margin-bottom: 40px;
+  margin-left: 131px;
+  font-family: "Cedarville Cursive", cursive;
+  color: black;
+  font-size: 2rem;
 }
 
-.images {
-  width: 70%;
+#contact-row2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.images > img {
-  margin-right: 2rem;
-} */
+#contact form {
+  color: black;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(34, 48, 60, 0.65);
+  border-radius: 10px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form-control label {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.form-control input {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-control textarea {
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+#contact form button {
+  width: 60px;
+  padding: 8px;
+  border: none;
+  background-color: #242526;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.contact-img img {
+  width: 500px;
+}
