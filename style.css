@@ -15,7 +15,7 @@ body {
   margin-top: 0;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-  background-color: #212529;
+  background-color: var(--background);
   color: black;
   position: relative;
 }
@@ -32,6 +32,12 @@ html {
 
 .scroll {
   scroll-snap-align: center;
+}
+
+@media only screen and (max-width: 600px){
+  html{
+    scroll-snap-type: none;
+  }
 }
 /* .portfolio {
   scroll-snap-type: y mandatory;
@@ -89,6 +95,13 @@ section {
 
 .nav-wrapper ul > li > a:hover {
   border-bottom: 3px solid #4deeea;
+}
+
+@media only screen and (max-width: 600px){
+  .nav-wrapper ul{
+    display: none;
+  }
+  
 }
 
 /* MAIN */
@@ -199,6 +212,33 @@ ul > li a{
   color: var(--blue_neon);
 }
 
+
+@media only screen and (max-width:600px){
+  #main{
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .main-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-wrapper div{
+    width: 90%;
+  }
+
+  .main-wrapper .desc{
+    align-self: center;
+    justify-self: center;
+  }
+
+  .photo img{
+    width: 250px;
+  }
+
+}
 /* ABOUT */
 
 #education {
@@ -248,6 +288,16 @@ ul > li a{
   text-underline-offset: 3px;
 }
 
+@media only screen and (max-width: 600px){
+  #education{
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  .education-wrapper{
+    padding-left: 2rem;
+  }
+}
 
 /* INTERNSHIPS */
 
@@ -302,6 +352,17 @@ ul > li a{
 .internship_info .intern .coursework span{
   text-decoration: underline ;
   text-underline-offset: 3px;
+}
+
+@media only screen and (max-width: 600px){
+  #internship{
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  .internship-wrapper{
+    padding-left: 2rem;
+  }
 }
 
 /* PROJECTS */
@@ -398,6 +459,39 @@ ul > li a{
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 600px){
+  #projects{
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  #projects h1 {
+    margin-bottom: 40px;
+    margin-left: 2rem;
+    font-family: "Cedarville Cursive", cursive;
+    color: black;
+    font-size: 2rem;
+  }
+
+  .projects-wrapper{
+    /* padding-left: 2rem; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .projects-wrapper #column1{
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .projects-wrapper #column2{
+    width: 90%;
+  }
+}
+
+
 
 /*CERTIFICATIONS*/
 #certifications {
@@ -437,6 +531,23 @@ ul > li a{
   font-size: 2rem;
 }
 
+@media only screen and (max-width:600px){
+  #certifications{
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .certifications-wrapper {
+    padding-left: 2rem;
+  }
+  
+  
+  .certification_info{
+    width: 90%;
+  }
+  
+}
 .nav-bg {
   background-color: var(--background);
 }
