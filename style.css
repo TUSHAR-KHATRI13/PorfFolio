@@ -7,6 +7,7 @@
 :root {
   --blue_neon: #006af9;
   --white: #ffffff;
+  --background: #dbdbdb;
 }
 
 
@@ -54,7 +55,7 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  background: #bfbfbf;
+  background: var(--background);
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -401,7 +402,7 @@ ul > li a{
 /*CERTIFICATIONS*/
 #certifications {
   height: 100vh;
-  background-color: #bfbfbf;
+  background-color: var(--background);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -437,19 +438,19 @@ ul > li a{
 }
 
 .nav-bg {
-  background-color: #bfbfbf;
+  background-color: var(--background);
 }
 
 #education {
-  background-color: #bfbfbf;
+  background-color: var(--background);
 }
 
 #internship {
-  background-color: #bfbfbf;
+  background-color: var(--background);
 }
 
 #projects {
-  background-color: #bfbfbf;
+  background-color: var(--background);
 }
 
 .nav-bg,
