@@ -22,6 +22,12 @@
       href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -32,10 +38,11 @@
         <div class="logo">Portfolio</div>
 
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#internship">Internships</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact Me</a></li>
+          <!-- <li><a href="#contact">Contact Me</a></li> -->
         </ul>
       </div>
       <!-- <div class="portfolio"> -->
@@ -47,11 +54,11 @@
           </div>
           <div class="desc">
             <h2>Akash Khatri</h2>
-            <span>Web Developer | Programmer</span>
+            <span>Web Developer <span class="vertical_line">|</span> Programmer</span>
             <br />
             <div class="para">
               <p>
-                 am a dedicated and innovative computer science graduate student at the University of Utah with a deep passion for problem-solving and software development. My academic journey has provided me with a strong foundation in computer science principles, and my hands-on experience includes developing websites and tackling complex problems in the realms of machine learning and deep learning. I am committed to continuous learning, staying up-to-date with industry trends, and leveraging my skills to create impactful solutions.
+                 I am a dedicated and progressive <span>Computer Science</span> graduate student at the University of Utah with a deep passion for problem-solving and software development. My academic journey has provided me with a strong foundation in computer science principles, and my hands-on experience includes developing <span>websites</span>, <span>tools</span> and currently diving deep into exploring novel problems in the realms of <span>machine learning</span> and <span>deep learning</span>. I am committed to continuous learning, staying up-to-date with industry trends, and leveraging my skills to create impactful solutions.
               </p>
             </div>
           </div>
@@ -81,13 +88,26 @@
     </div>
 
     <div class="scroll">
-      <section id="about">
-        <div class="about-wrapper">
+      <section id="education">
+        <div class="education-wrapper">
           <div class="heading">
-            <h1>About Me</h1>
+            <h1>Education</h1>
           </div>
-          <div class="paragraph">
-             I am a dedicated and passionate Computer Science graduate student at the University of Utah with a deep passion for problem-solving and software development. My academic journey has provided me with a strong foundation in computer science principles, and my hands-on experience includes developing websites and tackling complex problems in the realms of machine learning and deep learning. I am committed to continuous learning, staying up-to-date with industry trends, and leveraging my skills to create impactful solutions.
+          <div class="education_info">
+            <div class="ed">
+              <h3>University of Utah, <span>Aug 2023 - May 2025</span></h3>
+              <span class="degree">Master's in Computer Science</span>
+              <br>
+              <span class="coursework"><span>Coursework:</span> Advanced Algorithms, Computer Architecture, NLP with Deep Learning</span>
+            </div>
+
+            <div class="ed">
+              <h3>Thadomal Shahani Engineering College, <span>Aug 2019 - May 2023</span></h3>
+              <span class="degree">BE in Computer Engineering</span>
+              <br>
+              <span class="coursework"><span>Coursework:</span> Data Structures, Artificial Intelligence, Machine Learning, Advanced DBMS,<br> Operating Systems,
+                Cloud Computing, Object Oriented Programming, Big Data Analytics</span>
+            </div>
           </div>
         </div>
         <!-- </div> -->
@@ -95,23 +115,94 @@
     </div>
 
     <div class="scroll">
+      <section id="internship">
+        <div class="internship-wrapper">
+          <div class="heading">
+            <h1>Internships</h1>
+          </div>
+          <div class="internship_info">
+            <div class="intern">
+              <h3>Exposys Data Labs, <span>June 2021 - July 2021</span></h3>
+              <span class="position">Full Stack web Developer Intern</span>
+              <br>
+              <div class="info">
+                <ol>
+                  <li>Worked in a team of 4 to develop “Nostalgia”, a full-stack website for sharing memories through photos and
+                    narratives.</li>
+                  <li>Implemented interactive features for users to comment on posts and save them for future reference.</li>
+                  <li>Designed and integrated a versatile blogging system, enabling users to contribute and view articles on various
+                    topics.</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="intern">
+              <h3>Enovate Skill<span>June 2020 - July 2021</span></h3>
+              <span class="position">Internet of Things Trainee</span>
+              <br>
+              <div class="info">
+                <ol>
+                  <li>Programmed Arduino and Raspberry Pi devices to create functional IoT prototypes.
+                  </li>
+                  <li>Created and simulated IoT models using platforms like Tinkercad to test designs virtually.</li>
+                  <li>Designed and built various Tinkercad simulators, including fire alarm systems and temperature sensors.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+    </div>
+
+
+    <div class="scroll">
       <section id="projects">
         <h1>Projects</h1>
         <div class="projects-wrapper">
+          <div id="column1">
           <div class="card" id="card-1">
             <div class="card-content">
               <p>
                 <a
                   href="http://github.com/AkashKhatrii/Nostalgia"
                   target="_blank"
-                  ><i class="fas fa-link"></i>Social media app where users can
-                  post memories and blogs. It also has feature to save favourite
-                  posts and blogs.</a
+                  ><i class="fas fa-link"></i>DoorToDoor</a
                 >
               </p>
+
+              <div class="info">
+                <ul>
+                  <li>Crafted a prototype webapp focused on facilitating local business growth, specifically tailored for local service
+                    providers (plumbers, painters, carpenters, electricians) to connect with nearby users.</li>
+                  <li>Implemented a wide range of features, including service categories selection, user account creation, appointment
+                    scheduling, and an interface offering comprehensive management of appointments and services.</li>
+                </ul>
+
+              </div>
             </div>
           </div>
-          <div class="card" id="card-2">
+          
+          <div class="card" id="card-3">
+            <div class="card-content">
+              <p>
+                <a
+                  href="http://github.com/AkashKhatrii/ParaClone"
+                  target="_blank"
+                  ><i class="fas fa-link"></i>Paraclone
+                </a>
+              </p>
+
+              <div class="info">
+                <ul>
+                  <li>Developed a Chrome extension utilizing Chrome’s Storage API to facilitate data saving during internet sessions,
+                    eliminating the necessity to copy information to external applications.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="card" id="card-2">
             <div class="card-content">
               <p>
                 <a
@@ -122,53 +213,110 @@
                 >
               </p>
             </div>
+          </div> -->
+        </div>
+
+      
+
+        <div id="column2">
+          <div class="card" id="card-4">
+            <div class="card-content">
+              <p>
+                <a
+                  href="#projects"
+                  >Road Damage Detection and Classification</a
+                >
+              </p>
+
+              <div class="info">
+                <ul>
+                  <li>A deep learning-based road damage detection and classification system employing Faster R-CNN,
+                    YOLOv5, and SSD models.
+                    </li>
+                  <li>Ensured model robustness through curation of a diverse, high-quality dataset encompassing various road damage
+                    types, lighting conditions, and environments sourced from four different countries.
+                    </li>
+                  <li>Designed a user-friendly web application, allowing users to upload road damage photos for real-time detection</li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="card" id="card-3">
             <div class="card-content">
               <p>
                 <a
-                  href="http://github.com/AkashKhatrii/ParaClone"
+                  href="https://github.com/AkashKhatrii/react-chat-frontend"
                   target="_blank"
-                  ><i class="fas fa-link"></i>Chrome extension to copy and paste
-                  the content from the web, eliminating the need for visiting
-                  notepad again and again.
+                  ><i class="fas fa-link"></i>Teeter
                 </a>
+                <span id="teeter_demo"><a href="https://teeter.netlify.app/">Demo</a></span>
               </p>
+
+              <div class="info">
+                <ul>
+                  <li>A chatting web app built with React.js and deployed on netlify.</li>
+                  <li id="teeter_link">Click <a
+                    href="https://github.com/AkashKhatrii/react-chat-frontend"
+                    target="_blank"
+                
+                    ></i>here
+                  </a> to see the instructions to use the demo.</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="card" id="card-4">
-            <div class="card-content">
-              <p>
-                <a
-                  href="http://github.com/AkashKhatrii/todo-react"
-                  target="_blank"
-                  ><i class="fas fa-link"></i>A simpleToDo web app built with
-                  React.</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="card" id="card-5">
-            <div class="card-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                recusandae!
-              </p>
-            </div>
-          </div>
-          <div class="card" id="card-6">
+          <!-- <div class="card" id="card-6">
             <div class="card-content">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
                 recusandae!
               </p>
             </div>
-          </div>
+          </div> -->
+        </div>
         </div>
       </section>
     </div>
 
     <div class="scroll">
+      <section id="certifications">
+        <div class="certifications-wrapper">
+          <div class="heading">
+            <h1>Partcipations</h1>
+          </div>
+          <div class="certification_info">
+            <ol>
+              <li>Participated in 4 intercollege hackathons and was top 10 in two of them.</li>
+              <li>Cleared level 1 of International Maths Olympiad
+              <li>State Level Cricket Player(Invited team)</li>
+              <li> Runner up of Blind Code Competition (code with monitor screen off) held in College</li>
+              
+              <li>Worked with an NGO (Simran Seva Pratishthan, Nov 21 – June 22), for a period of 8 
+                months where we raised funds for education of needy children and provided food and 
+                shelter to Adivasi (tribal people)</li>
+
+            </ol>
+          </div>
+
+          <div class="heading2">
+            <h1>Certifications</h1>
+          </div>
+          <div class="certification_info">
+            <ol>
+              <li>Oracke Cloud Infrastructure 2023 Foundations Associate.</li>
+              <li>Oracle Cloud Infrastructure 2023 AI Foundations Associate.</li>
+              <li>30 days of Google Cloud Platform</li>
+              <li>Hackerrank Python Basic and Intermediate</li>
+              <li>C++ Gold Hackerrank</li>
+
+            </ol>
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+    </div>
+
+    <!-- <div class="scroll">
       <section id="contact">
         <div id="contact-row1">
           <h1>Contact Me</h1>
@@ -204,7 +352,7 @@
             <img src="images/contact.png" alt="person" />
           </div>
         </div>
-      </section>
-    </div>
+      </section> -->
+    <!-- </div> -->
   </body>
 </html>

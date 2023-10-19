@@ -4,12 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --blue_neon: #006af9;
+  --white: #ffffff;
+}
+
+
 body {
   margin-top: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
   background-color: #212529;
-  color: white;
+  color: black;
   position: relative;
 }
 a {
@@ -48,7 +54,7 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.1);
+  background: #bfbfbf;
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -70,17 +76,18 @@ section {
 
 .nav-wrapper ul > li {
   text-decoration: none;
-  margin-right: 65px;
-  font-size: 1.2rem;
+  margin-right: 3rem;
+  font-size: 1rem;
   font-weight: 550;
 }
 .nav-wrapper ul > li > a {
   padding: 5px 10px;
+  color: var(--blue_neon);
   transition: border ease-in;
 }
 
 .nav-wrapper ul > li > a:hover {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #4deeea;
 }
 
 /* MAIN */
@@ -108,7 +115,9 @@ section {
   justify-content: center;
 }
 .photo img {
-  border-radius: 50%;
+  margin-top: 3rem;
+  width: 350px;
+  border-radius: 100%;
 }
 .desc {
   display: flex;
@@ -139,13 +148,25 @@ section {
 
 .desc span {
   font-weight: 400;
+  color: var(--blue_neon);
+}
+
+.desc span .vertical_line {
+  color: white;
 }
 
 .para {
   width: 70%;
+  text-align: justify;
 }
 .desc p {
   font-size: 1rem;
+}
+
+.desc p span{
+  color: var(--blue_neon);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .social-wrapper {
@@ -170,11 +191,16 @@ ul > li {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 550;
+  
+}
+
+ul > li a{
+  color: var(--blue_neon);
 }
 
 /* ABOUT */
 
-#about {
+#education {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -182,8 +208,8 @@ ul > li {
   scroll-snap-align: start;
 }
 
-.about-wrapper {
-  padding-left: 100px;
+.education-wrapper {
+  padding-left: 5rem;
 }
 
 .heading {
@@ -196,9 +222,85 @@ ul > li {
   font-size: 2rem;
 }
 
-.paragraph {
-  width: 50%;
-  margin-top: 3%;
+.education_info{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education_info .ed h3{
+  color: var(--blue_neon);
+}
+
+.education_info .ed h3 span{
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.education_info .ed .degree{
+  font-style: italic;
+}
+
+.education_info .ed .coursework span{
+  text-decoration: underline ;
+  text-underline-offset: 3px;
+}
+
+
+/* INTERNSHIPS */
+
+#internship {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.internship-wrapper {
+  padding-left: 5rem;
+}
+
+.internship-wrapper .heading {
+  width: 40%;
+  margin-top: -5%;
+}
+
+.internship-wrapper .heading h1 {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 2rem;
+}
+
+.internship_info{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.internship_info .intern h3{
+  color: var(--blue_neon);
+}
+
+.internship_info .intern h3 span{
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.internship_info .intern .position{
+  font-style: italic;
+}
+
+.internship_info .intern .info ol{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  list-style-type: lower-roman;
+}
+
+.internship_info .intern .coursework span{
+  text-decoration: underline ;
+  text-underline-offset: 3px;
 }
 
 /* PROJECTS */
@@ -218,25 +320,36 @@ ul > li {
 
 #projects h1 {
   margin-bottom: 40px;
-  margin-left: 131px;
+  margin-left: 5rem;
   font-family: "Cedarville Cursive", cursive;
   color: black;
   font-size: 2rem;
 }
 .projects-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  gap: 20px
+}
+
+.projects-wrapper #column1{
+  width: 50%;
+  margin-left: 5rem;
+}
+
+.projects-wrapper #column2{
+  width: calc(100% - 50% - 5rem);
 }
 .card {
-  height: 70px;
+  overflow: auto;
+  width: 100%;
 }
 .card-content {
-  width: 65%;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -255,18 +368,84 @@ ul > li {
 }
 .card-content a {
   color: black;
+  font-size: 1.2rem;
+  font-weight: 800;
 }
 .card-content i {
   font-size: 0.8rem;
   margin-right: 8px;
 }
 
-.nav-bg {
-  background-color: #242526;
+.card-content .info ul{
+  padding-top: 0.7rem;
+  padding-left: 1rem;
+}
+.card-content .info ul li{
+  font-size: 1rem;
 }
 
-#about {
-  background-color: #3a3b3c;
+.card-content p #teeter_demo a{
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.card-content .info #teeter_link a{
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+
+/*CERTIFICATIONS*/
+#certifications {
+  height: 100vh;
+  background-color: #bfbfbf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.certifications-wrapper {
+  padding-left: 5rem;
+}
+
+.certifications-wrapper .heading {
+  width: 40%;
+  margin-top: -5%;
+}
+
+.certifications-wrapper .heading h1 {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 2rem;
+}
+
+.certification_info{
+  width: 60%;
+}
+
+.certifications-wrapper .heading2 {
+  width: 40%;
+  margin-top: 2rem;
+}
+
+.certifications-wrapper .heading2 h1 {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 2rem;
+}
+
+.nav-bg {
+  background-color: #bfbfbf;
+}
+
+#education {
+  background-color: #bfbfbf;
+}
+
+#internship {
+  background-color: #bfbfbf;
 }
 
 #projects {
