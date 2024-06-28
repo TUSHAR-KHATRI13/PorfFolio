@@ -125,7 +125,7 @@ section {
   display: flex;
   align-items: center;
 
-  padding: 4rem 2rem;
+  padding: 4rem 1rem;
   margin: 0 4rem;
 
   background-color: #f8f8f8; /* Section background color */
@@ -231,6 +231,56 @@ ul > li a{
   color: var(--blue_neon);
 }
 
+.about-wrapper {
+  /* display: flex;
+  align-items: center; */
+
+  padding: 4rem 2rem;
+  margin: 0 2rem;
+
+  background-color: #f8f8f8; /* Section background color */
+  box-shadow: 5px 5px 15px #d0d0d0, -5px -5px 15px #ffffff;
+
+  box-shadow: 5px 5px 10px #c7c7c7, -5px -5px 10px #ffffff; */
+  box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #3f3f3f;
+  border-radius:10px;
+  text-align: left;
+}
+
+.about-wrapper #name{
+  color: var(--blue_neon);
+  margin-bottom: 0.3rem;
+}
+.about-wrapper h1 {
+  font-size: 3rem;
+  color: #64ffda;
+  margin: 0;
+
+  color: #ff7300;
+}
+.about-wrapper h2 {
+  font-size: 2rem;
+  color: #8892b0;
+  margin: 0;
+  margin-top: 1rem;
+}
+.about-wrapper p {
+  font-size: 1rem;
+  color: #ccd6f6;
+  color: #939393;
+  margin-top: 1rem;
+  max-width: 800px;
+}
+
+.about-wrapper button{
+  border: none;
+  background: transparent;
+  border: 1px solid #ff7300;
+  padding: 8px 20px;
+  color: #ff7300;
+  margin-top:1.5rem;
+  cursor: pointer;
+}
 
 @media only screen and (max-width:1000px){
   #main{
@@ -291,7 +341,7 @@ ul > li a{
 
 .education-wrapper {
   padding: 2rem;
-  margin: 0 4rem;
+  margin: 0 2rem;
   padding-bottom: 4rem;
 
   background-color: #f8f8f8; /* Section background color */
@@ -370,7 +420,7 @@ ul > li a{
 
 .internship-wrapper {
   padding: 2rem;
-  margin: 0 4rem;
+  margin: 0 2rem;
 
   background-color: #f8f8f8; /* Section background color */
   box-shadow: 5px 5px 15px #d0d0d0, -5px -5px 15px #ffffff;
@@ -457,7 +507,7 @@ ul > li a{
   display:flex;
   flex-direction: column;  
   padding: 2rem;
-  margin: 0 4rem;
+  margin: 0 2rem;
 
   background-color: #f8f8f8; /* Section background color */
   box-shadow: 5px 5px 15px #d0d0d0, -5px -5px 15px #ffffff;
@@ -592,14 +642,14 @@ ul > li a{
   flex-direction: column;
   justify-content: center;
   scroll-snap-align: start;
-  margin-top: 7rem;
+  margin-top: 5rem;
   margin-bottom: 4rem;
 
 }
 
 .certifications-wrapper {
   padding: 2rem;
-  margin: 0 4rem;
+  margin: 0 2rem;
 
   display: flex;
   flex-direction: column;
