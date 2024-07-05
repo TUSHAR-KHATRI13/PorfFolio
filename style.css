@@ -134,15 +134,15 @@ section {
 
 .nav-wrapper ul > li {
   text-decoration: none;
-  margin-right: 3rem;
-  font-size: 1rem;
-  font-weight: 550;
+  margin-right: 2.5rem;
+  font-size: 1.1rem;
+  /* font-weight: 550; */
 }
 .nav-wrapper ul > li > a {
   padding: 5px 10px;
   color: var(--blue_neon);
   /* color: var(--dark_blue); */
-  transition: border ease-in;
+  transition: border 0.15s ease-in;
 }
 
 .nav-wrapper ul > li > a:hover {
@@ -293,6 +293,14 @@ ul > li a{
   box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #3f3f3f; */
   border-radius:10px;
   text-align: left;
+
+  display: flex;
+  gap: 2rem;
+  
+}
+
+.about-wrapper .about-intro{
+  width: 70%;
 }
 
 .about-wrapper #name{
@@ -329,6 +337,49 @@ ul > li a{
   margin-top:1.5rem;
   cursor: pointer;
 }
+
+.about-contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.contact-item i {
+  font-size: 24px; /* Adjust icon size as needed */
+  color: #00bfa5;
+}
+
+.contact-item a,
+.contact-item span {
+  color: #333; /* Link and text color */
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width:1000px){
+  .about-wrapper{
+    flex-direction: column;
+  }
+
+  .about-wrapper .about-intro{
+    width: 100%;
+  }
+}
+
 
 @media only screen and (max-width:1000px){
   #main{
