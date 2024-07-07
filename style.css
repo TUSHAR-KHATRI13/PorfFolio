@@ -9,13 +9,13 @@
   --blue_neon: #006af9;
   
   /* dark mode blue_nion */
-  --blue_neon: #00bfa5;
+  /* --blue_neon: #00bfa5; */
   --orange: #f96a00;
   --green_neon: #00bfa5;
-  /* --section_bg: #f8f8f8; */
+  --section_bg: #f8f8f8;
   
   /* dark mode section bg */
-  --section_bg: #434343;
+  /* --section_bg: #434343; */
   --text-color: #434343;
   --dark_text-color: #ffffff;
   /* --dark_blue: #7ca8cc; */
@@ -31,8 +31,8 @@ body {
   margin-top: 0;
   /* font-family: 'Montserrat', sans-serif; */
   min-height: 100vh;
-  background-color: var(--dark_body_background);
-  color: var(--dark_text-color);
+  background-color: var(--body_background);
+  color: var(--text-color);
   position: relative;
 }
 
@@ -42,7 +42,7 @@ h1, h2{
 }
 a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
 }
 
 html {
@@ -932,6 +932,7 @@ section {
   display: flex; 
   justify-content: center; 
   align-items: center; 
+  overflow: hidden;
 }
 
 .contact-map figure{
