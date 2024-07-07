@@ -987,7 +987,7 @@ ul > li a{
 .form-map{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 4rem;
 }
 
@@ -995,6 +995,7 @@ ul > li a{
   display: flex;
   justify-content: flex-start;
   width: 100%;
+  flex: 1;
 }
 .contact-form form {
   color: black;
@@ -1045,14 +1046,19 @@ ul > li a{
 
 .contact-map{
   width: 100%;
+  height: 500px;
+  background-color: red;
   border-radius: 10px;
-  overflow: hidden;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .contact-map figure{
+  width: 100%;
   height: 100%;
+  margin: 0;
 }
-
 
 @media only screen and (max-width: 1000px){
   #contact form{
@@ -1061,6 +1067,10 @@ ul > li a{
 
   .form-map{
     flex-direction: column;
+  }
+
+  .contact-map{
+    height: 350px;
   }
 }
 
