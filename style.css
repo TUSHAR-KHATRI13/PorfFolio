@@ -371,6 +371,9 @@ ul > li a{
 }
 
 @media only screen and (max-width:1000px){
+  #main{
+    margin-top: 1rem;
+  }
   .about-wrapper{
     flex-direction: column;
   }
@@ -380,53 +383,6 @@ ul > li a{
   }
 }
 
-
-@media only screen and (max-width:1000px){
-  #main{
-    height: auto;
-    margin-top: 2rem;
-  }
-
-  .main-wrapper{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .main-wrapper div{
-    width: 90%;
-  }
-
-  .main-wrapper .desc{
-    align-self: center;
-    justify-self: center;
-  }
-
-  .photo img{
-    width: 250px;
-  }
-
-  .desc{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .desc h2{
-    margin-left: 4rem;
-  }
-  .para {
-    width: 100%;
-    text-align: justify;
-  }
-
-  .social-links {
-    width: 60%;
-  }
-  
-
-}
 /* ABOUT */
 
 #education {
