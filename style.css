@@ -150,6 +150,9 @@ section {
 }
 
 @media only screen and (max-width: 1000px){
+  .nav-wrapper{
+    display: none;
+  }
   .nav-wrapper ul{
     display: none;
   }
@@ -372,7 +375,7 @@ ul > li a{
 
 @media only screen and (max-width:1000px){
   #main{
-    margin-top: 0.15rem;
+    margin-top: 2.3rem;
   }
   .about-wrapper{
     flex-direction: column;
