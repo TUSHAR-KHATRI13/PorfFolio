@@ -550,7 +550,7 @@ section {
   left: 8px;
   top: 7px;
   width: 2px;
-  height: 75%;
+  height: 100%;
   border-radius: 50%;
   background-color: var(--green_neon);
 }
@@ -963,6 +963,7 @@ section {
   justify-content: center;
   scroll-snap-align: start;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .contact-wrapper {
