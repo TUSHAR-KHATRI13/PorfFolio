@@ -34,6 +34,7 @@ body {
   background-color: var(--body_background);
   color: var(--text-color);
   position: relative;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2{
@@ -333,7 +334,7 @@ section {
 }
 
 .education_info .ed .degree{
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .education_info .ed .coursework span{
@@ -423,7 +424,7 @@ section {
 
 .internship_info .intern .position{
   /* font-style: italic; */
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .internship_info .intern .info ol{
@@ -600,7 +601,7 @@ section {
 .card-content a {
   color: var(--blue_neon);
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 .card-content i {
   color: black;
