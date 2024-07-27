@@ -226,6 +226,12 @@ section {
   color: #ff7300;
   margin-top:1.5rem;
   cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.about-wrapper button:hover{
+  background-color: #ff7300;
+  color: white;
 }
 
 .about-contact-links {
