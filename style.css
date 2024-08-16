@@ -272,6 +272,8 @@ section {
   }
   .about-wrapper{
     flex-direction: column;
+    margin: 0 1rem;
+    padding: 4rem 1rem;
   }
 
   .about-wrapper .about-intro{
@@ -365,6 +367,8 @@ section {
 
   .education-wrapper{
     padding-left: 2rem;
+    margin: 0 1rem;
+    padding: 4rem 1rem;
   }
 }
 
@@ -411,6 +415,9 @@ section {
   position: relative;
 }
 
+.internship_info .info{
+text-align: justify;
+}
 .internship_info .intern h3{
   color: var(--blue_neon);
 }
@@ -478,6 +485,8 @@ section {
 
   .internship-wrapper{
     padding-left: 2rem;
+    margin: 0 1rem;
+    padding: 4rem 1rem;
   }
 
   .internship_info .intern .info ol li{
@@ -609,7 +618,7 @@ section {
 }
 
 .card-content .info{
-  /* text-align: justify; */
+  text-align: justify;
 }
 .card-content .info ul{
   padding-top: 0.7rem;
@@ -662,6 +671,11 @@ section {
 
   .projects-wrapper #column2{
     width: 100%;
+  }
+
+  .projects-outer-wrapper{
+    margin: 0 1rem;
+    padding: 4rem 1rem;
   }
 }
 
@@ -741,6 +755,8 @@ section {
 
   .certifications-wrapper {
     padding-left: 2rem;
+    margin: 0 1rem;
+    padding: 4rem 1rem;
   }
   
   
@@ -839,10 +855,19 @@ section {
       grid-template-columns: repeat(3, 1fr); 
   }
 }
+
+@media (max-width: 1000px){
+  .languages-wrapper{
+    margin: 0 1rem;
+    padding: 4rem 1rem;
+  }
+}
 @media (max-width: 768px) {
   .languages-logos {
       grid-template-columns: repeat(2, 1fr);
   }
+
+  
 }
 @media (max-width: 480px) {
   .languages-logos {
@@ -959,6 +984,8 @@ section {
   .contact-map{
     height: 350px;
   }
+
+
 }
 
 
@@ -1016,6 +1043,9 @@ section {
 
 .footer-social-links {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 20px; /* Adjust as needed */
   margin-bottom: 10px;
 }
@@ -1047,4 +1077,11 @@ section {
 
 .footer-credits span{
   color: var(--green_neon);
+}
+
+@media only screen and (max-width: 1000px){
+  .contact-wrapper{
+    margin: 0 1rem;
+    padding: 4rem 1rem;
+  }
 }
