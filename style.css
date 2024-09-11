@@ -449,7 +449,7 @@ text-align: justify;
 
 .internship_info .intern .info ul li{
   font-size: 1.1rem;
-  width: 70%;
+  width: 97%;
 }
 
 .internship_info .intern .coursework span{
@@ -920,6 +920,8 @@ text-align: justify;
   .category {
       flex-direction: column; /* Stack h2 and p on top of each other on small screens */
       gap: 0.5rem;
+      align-items: flex-start;
+      margin-bottom: 1rem;
   }
 
   .languages-wrapper{
