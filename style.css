@@ -34,6 +34,7 @@ body {
   background-color: var(--body_background);
   color: var(--text-color);
   position: relative;
+  font-family: "Raleway", sans-serif;
 }
 
 h1, h2{
@@ -326,6 +327,7 @@ section {
 
 .education_info .ed h3{
   color: var(--blue_neon);
+  font-weight: 600;
 }
 
 .education_info .ed h3 span{
@@ -359,6 +361,11 @@ section {
   height: 10px;
   border-radius: 50%;
   background-color: var(--green_neon);
+}
+
+.coursework{
+  margin-top: 5px;
+  font-style: italic;
 }
 @media only screen and (max-width: 1000px){
   #education{
@@ -434,13 +441,13 @@ text-align: justify;
   font-weight: 600;
 }
 
-.internship_info .intern .info ol{
+.internship_info .intern .info ul{
   padding-top: 1rem;
   padding-left: 1rem;
-  list-style-type: lower-roman;
+  /* list-style-type: lower-roman; */
 }
 
-.internship_info .intern .info ol li{
+.internship_info .intern .info ul li{
   font-size: 1.1rem;
   width: 70%;
 }
@@ -802,22 +809,12 @@ text-align: justify;
   margin-top: 5rem;
 }
 
-.languages-wrapper {
+/* .languages-wrapper {
   padding: 2rem;
   margin: 0 2rem;
 
-  background-color: var(--section_bg); /* Section background color */
-  /* box-shadow: 5px 5px 15px #d0d0d0, -5px -5px 15px #ffffff; */
+  background-color: var(--section_bg);
   border-radius:10px;
-
-  /* background-color: #f0f0f0; */
-  /* box-shadow: 5px 5px 10px #c7c7c7, -5px -5px 10px #ffffff; 
-  box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #3f3f3f; */
-}
-
-.languages-wrapper .heading {
-  /* width: 40%; */
-  /* margin-top: -5%; */
 }
 
 .languages-wrapper .heading h1 {
@@ -841,7 +838,6 @@ text-align: justify;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  /* box-shadow: 5px 5px 15px rgba(0,0,0,0.1); Optional: shadow effect */
 }
 
 .grid-item img {
@@ -879,8 +875,58 @@ text-align: justify;
   .languages-logos {
       grid-template-columns: 1fr; 
   }
+} */
+
+
+.languages-wrapper {
+  padding: 2rem;
+  margin: 0rem 2rem;
+  background-color: var(--section_bg); /* Section background color */
+  border-radius: 10px;
 }
 
+.languages-info {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.category {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.category .category-h2 {
+  /* min-width: 180px; */
+  margin-right: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.category p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .languages-info {
+      flex-direction: column;
+  }
+  
+  .category {
+      flex-direction: column; /* Stack h2 and p on top of each other on small screens */
+      gap: 0.5rem;
+  }
+
+  .languages-wrapper{
+    margin: 0 1rem;
+    padding: 4rem 1rem;
+  }
+}
 
 #contact {
   height: auto;
@@ -1091,6 +1137,11 @@ text-align: justify;
 
 @media only screen and (max-width: 1000px){
   .contact-wrapper{
+    margin: 0 1rem;
+    padding: 4rem 1rem;
+  }
+
+  .footer-wrapper{
     margin: 0 1rem;
     padding: 4rem 1rem;
   }
